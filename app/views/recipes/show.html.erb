@@ -2,6 +2,9 @@
   <p id="notice"><%= notice %></p>
   <div class="panel panel-default">
     <div class="panel panel-body">
+
+      <%= image_tag @recipe.image.url(:medium) %>
+
       <p>
         <strong>Title:</strong>
         <%= @recipe.title %>

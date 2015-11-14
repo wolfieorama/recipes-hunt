@@ -7,12 +7,13 @@
 
           <div class="panel panel-default">
             <div class="panel panel-body">
+                <%= image_tag recipe.image.url(:medium) %>
               <p>
                 <h2><%= link_to recipe.title, recipe %></h2>
               </p>
-              <p>
+              <!-- <p>
                 <%= recipe.description %>
-              </p>
+              </p> -->
               <!-- <%= recipe.user_id %> -->
           </div>
             <div class="panel panel-footer">
