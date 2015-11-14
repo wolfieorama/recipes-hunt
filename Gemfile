@@ -26,8 +26,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Bootstrap for good looks
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.5.1'
 
-# Bootstrap form 
+# Bootstrap form
 gem 'bootstrap_form'
+
+#for our images
+gem 'paperclip', '~> 4.3', '>= 4.3.1'
 
 
 # Use ActiveModel has_secure_password

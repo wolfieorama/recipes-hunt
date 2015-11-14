@@ -1,19 +1,25 @@
-<p id="notice"><%= notice %></p>
+<div class="col-md-8 col-md-offset-2">
+  <p id="notice"><%= notice %></p>
+  <div class="panel panel-default">
+    <div class="panel panel-body">
+      <p>
+        <strong>Title:</strong>
+        <%= @recipe.title %>
+      </p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @recipe.title %>
-</p>
+      <p>
+        <strong>Description:</strong>
+        <%= @recipe.description %>
+      </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @recipe.description %>
-</p>
-
-<!-- <p>
-  <strong>User:</strong>
-  <%= @recipe.user_id %>
-</p> -->
-
-<%= link_to 'Edit', edit_recipe_path(@recipe) %> |
-<%= link_to 'Back', recipes_path %>
+      <!-- <p>
+        <strong>User:</strong>
+        <%= @recipe.user_id %>
+      </p> -->
+    </div>
+    <div class="panel panel-footer">
+      <%= link_to 'Edit', edit_recipe_path(@recipe) %> |
+      <%= link_to 'Back', recipes_path %>
+    </div>
+</div>
+</div>
