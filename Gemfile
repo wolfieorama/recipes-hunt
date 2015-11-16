@@ -32,6 +32,9 @@ gem 'bootstrap_form'
 #for our images
 gem 'paperclip', '~> 4.3', '>= 4.3.1'
 
+#cocoon
+gem 'cocoon', '~> 1.2', '>= 1.2.6'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
