@@ -5,12 +5,12 @@
       <% @recipes.each do |recipe| %>
 
           <div class="col-xs-12 col-md-4 ">
-            <div class="panel panel-default">
+            <div id="index_image" class="panel panel-default">
               <div class="panel panel-body">
 
                   <%= image_tag recipe.image.url(:medium) %>
                 <p>
-                  <h2><%= link_to recipe.title, recipe %></h2>
+                  <h2 style="text-align: center"><%= link_to recipe.title, recipe %></h2>
                 </p>
                 <!-- <p>
                   <%= recipe.description %>
@@ -25,7 +25,3 @@
             </div>
           </div>
       <% end %>
-
-  <br>
-
-  <%= link_to 'New Recipe', new_recipe_path %>
