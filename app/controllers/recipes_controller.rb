@@ -5,7 +5,11 @@ class RecipesController < ApplicationController
   # GET /recipes
   # GET /recipes.json
   def index
-    @recipes = current_user.recipes.all
+    if current_user.admin?
+      @recipes = Recipe.all
+    else
+      @recipes = current_user.recipes.all
+    end
   end
 
   # GET /recipes/1
