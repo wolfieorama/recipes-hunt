@@ -35,6 +35,9 @@ gem 'paperclip', '~> 4.3', '>= 4.3.1'
 #cocoon
 gem 'cocoon', '~> 1.2', '>= 1.2.6'
 
+#devise for authentication
+gem 'devise', '~> 3.5', '>= 3.5.2'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
