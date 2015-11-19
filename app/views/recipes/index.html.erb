@@ -21,7 +21,7 @@
               <div class="panel panel-footer">
                 <%= link_to 'Show', recipe %>
                 <%= link_to 'Edit', edit_recipe_path(recipe) if can? :edit, Recipe %>
-                <%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' } if can? :edit, Recipe %>
+                <%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' } if can? :destroy, Recipe %>
               </div>
             <% end %>
             </div>
