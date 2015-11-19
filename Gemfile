@@ -38,6 +38,8 @@ gem 'cocoon', '~> 1.2', '>= 1.2.6'
 #devise for authentication
 gem 'devise', '~> 3.5', '>= 3.5.2'
 
+#cancancan to rollify
+gem 'cancancan', '~> 1.10'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
