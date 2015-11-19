@@ -22,7 +22,7 @@
     </div>
     <div class="panel panel-footer">
       <% if user_signed_in? %>
-        <%= link_to 'Edit', edit_recipe_path(@recipe) %>
+        <%= link_to 'Edit', edit_recipe_path(@recipe) if can? :edit, Recipe %>
       <% else %>
         <%= link_to 'Back', recipes_path %>
       <% end %>
