@@ -41,6 +41,10 @@ gem 'devise', '~> 3.5', '>= 3.5.2'
 #cancancan to rollify
 gem 'cancancan', '~> 1.10'
 
+#rails workflow for some logic
+
+gem 'rails_workflow', '~> 0.3.5'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

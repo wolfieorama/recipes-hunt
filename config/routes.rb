@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
    root 'recipes#index'
 
+   mount RailsWorkflow::Engine => '/workflow', as: 'workflow'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
