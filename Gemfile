@@ -43,6 +43,8 @@ gem 'cancancan', '~> 1.10'
 
 #rails workflow for some logic
 
+gem 'administrate'
+
 gem 'rails_workflow', '~> 0.3.5'
 
 # Use ActiveModel has_secure_password
