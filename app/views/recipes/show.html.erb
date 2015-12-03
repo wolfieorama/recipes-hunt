@@ -15,10 +15,20 @@
         <%= @recipe.description %>
       </p>
 
-      <!-- <p>
-        <strong>User:</strong>
-        <%= @recipe.user_id %>
-      </p> -->
+      <h2>Ingridients</h2>
+      <ul>
+        <% @recipe.ingredients.each do |ingredient| %>
+          <li><%= ingredient.name %></li>
+        <% end %>
+      </ul>
+
+      <h2>Directions</h2>
+      <ul>
+        <% @recipe.directions.each do |direction| %>
+          <li><%= direction.step %></li>
+        <% end %>
+      </ul>
+
     </div>
     <div class="panel panel-footer">
       <% if user_signed_in? %>
