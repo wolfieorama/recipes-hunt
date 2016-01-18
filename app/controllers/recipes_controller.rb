@@ -6,7 +6,7 @@ class RecipesController < ApplicationController
   # GET /recipes.json
   def index
     if current_user.try(:admin?)
-      @recipes = Recipe.all
+      @recipes = Recipe.all.include(:title)
     else
       @recipes = current_user.recipes.all
     end
